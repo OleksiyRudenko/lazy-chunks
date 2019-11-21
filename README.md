@@ -35,8 +35,10 @@ Here we use fictional city names.
 
 For the following example we assume
 that hint list size is 5 city names,
-server response offers 5 city names (chunk size),
-and max number of chunks to cache is 5. 
+server response offers 10 city names
+(chunk size, at least twice as many as 
+hint list size),
+and max number of city names to cache is 25. 
 
 At some point our cache may look as follows:
 
@@ -51,6 +53,9 @@ At some point our cache may look as follows:
             "_": [
               "Cabad",
               "Cabad Al",
+              "Cabado",
+              "Cabaduz",
+              "Cabaduzzi"
             ] 
           },
           "cabag": {
